@@ -1,0 +1,8 @@
+{
+  "name": "netlify-supabase-guestbook",
+  "version": "1.0.0",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.0.0",
+    "package.json": "^2.0.1"
+  }
+}

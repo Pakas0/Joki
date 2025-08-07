@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buku Tamu Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Buku Tamu Digital</h1>
+        <p>Tinggalkan ucapan spesialmu di sini!</p>
+
+        <form id="guestbook-form">
+            <input type="text" id="name" placeholder="Nama Kamu" required>
+            <textarea id="message" placeholder="Tulis ucapanmu..." required></textarea>
+            <button type="submit">Kirim Ucapan</button>
+        </form>
+
+        <div class="messages-header">
+            <h2>Ucapan yang Masuk</h2>
+        </div>
+        <div id="messages-container">
+            <p>Memuat ucapan...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
