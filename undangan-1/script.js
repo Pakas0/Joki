@@ -1,5 +1,5 @@
 // Atur tanggal pernikahan Anda di sini
-const weddingDate = new Date("Oct 15, 2025 09:00:00").getTime();
+const weddingDate = new Date("Dec 25, 2025 09:00:00").getTime();
 
 // Perbarui hitungan mundur setiap 1 detik
 const countdownFunction = setInterval(function() {
@@ -27,4 +27,5 @@ const countdownFunction = setInterval(function() {
         clearInterval(countdownFunction);
         document.getElementById("countdown-timer").innerHTML = "Acara Telah Berlangsung";
     }
+
 }, 1000);
