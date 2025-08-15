@@ -22,7 +22,7 @@ h1, h2, h3 {
 
 /* Header / Hero Section */
 .hero {
-    background: url('https://www.irishexaminer.com/cms_media/module_img/6900/3450160_1_articlemedium_iStock-1173488478.jpg');
+    background: url('https://www.irishexaminer.com/cms_media/module_img/6900/3450160_1_articlemedium_iStock-1173488478.jpg')no-repeat center center/cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -172,4 +172,5 @@ footer p {
     .groom, .bride {
         width: 100%;
     }
+
 }
