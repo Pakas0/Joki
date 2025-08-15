@@ -117,6 +117,7 @@ nav a:hover {
 }
 
 /* Contact */
+/* Contact */
 .contact-info {
   display: flex;
   flex-direction: column;
@@ -128,7 +129,23 @@ nav a:hover {
   text-decoration: none;
   color: #ff6600;
   font-weight: 500;
+  transition: 0.3s;
 }
+
+.contact-info a:hover {
+  color: #e65500;
+}
+
+/* Lightbox zoom effect */
+.overlay img {
+  transition: transform 0.2s ease-in-out;
+  cursor: zoom-in;
+}
+.overlay img.zoomed {
+  transform: scale(1.5);
+  cursor: zoom-out;
+}
+
 
 footer {
   text-align: center;
