@@ -3,9 +3,35 @@ document.querySelectorAll('.gallery img').forEach(img => {
   img.addEventListener('click', () => {
     const overlay = document.createElement('div');
     overlay.classList.add('overlay');
-    overlay.innerHTML = `<img src="${img.src}" alt="Foto Portofolio">`;
+    
+    const fullImg = document.createElement('img');
+    fullImg.src = img.src;
+    fullImg.alt = "Foto Portofolio";
+
+    overlay.appendChild(fullImg);
     document.body.appendChild(overlay);
-    overlay.addEventListener('click', () => overlay.remove());
+
+    // Klik overlay untuk tutup
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) overlay.remove();
+    });
+
+    // Klik gambar untuk zoom in/out
+    fullImg.addEventListener('click', () => {
+      fullImg.classList.toggle('zoomed');
+    });
+
+    // Zoom pakai scroll
+    overlay.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      let scale = fullImg.style.transform ? parseFloat(fullImg.style.transform.replace('scale(', '').replace(')', '')) : 1;
+      if (e.deltaY < 0) {
+        scale += 0.1;
+      } else {
+        scale = Math.max(1, scale - 0.1);
+      }
+      fullImg.style.transform = `scale(${scale})`;
+    });
   });
 });
 
@@ -25,6 +51,7 @@ style.innerHTML = `
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 `;
 document.head.appendChild(style);
