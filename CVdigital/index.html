@@ -3,92 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budi Hartono - Web Developer Portfolio</title>
+    <title>Budi Hartono | Web Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <div class="cv-container">
-        <aside class="sidebar">
-            <div class="profile-section">
-                <img src="https://i.ibb.co/68S5W1z/profile-placeholder.jpg" alt="Foto Profil Budi Hartono" class="profile-pic">
-                <h1 class="name">Budi Hartono</h1>
-                <p class="title">Junior Web Developer</p>
+    <div class="website-container">
+        <nav class="sidebar-nav">
+            <div class="profile">
+                <img src="https://i.ibb.co/68S5W1z/profile-placeholder.jpg" alt="Foto Profil" class="profile-pic">
+                <h3>Budi Hartono</h3>
             </div>
-            <div class="contact-section">
-                <h2>Kontak</h2>
-                <ul>
-                    <li><i class="fas fa-envelope"></i><a href="mailto:budi.hartono@email.com">budi.hartono@email.com</a></li>
-                    <li><i class="fas fa-phone"></i><a href="tel:+6281234567890">+62 812 3456 7890</a></li>
-                    <li><i class="fas fa-map-marker-alt"></i><span>Semarang, Indonesia</span></li>
-                    <li><i class="fab fa-linkedin"></i><a href="#" target="_blank">linkedin.com/in/budi</a></li>
-                    <li><i class="fab fa-github"></i><a href="#" target="_blank">github.com/budi-dev</a></li>
-                </ul>
-            </div>
-            <div class="skills-section">
-                <h2>Keahlian</h2>
-                <div class="skill">
-                    <p>HTML5 & CSS3</p>
-                    <div class="progress-bar"><div style="width: 90%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>JavaScript (ES6+)</p>
-                    <div class="progress-bar"><div style="width: 80%;"></div></div>
-                </div>
-                <div class="skill">
-                    <p>React.js</p>
-                    <div class="progress-bar"><div style="width: 75%;"></div></div>
-                </div>
-                 <div class="skill">
-                    <p>Node.js</p>
-                    <div class="progress-bar"><div style="width: 60%;"></div></div>
-                </div>
-            </div>
-        </aside>
+            <ul>
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i><span>Home</span></a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i><span>Tentang</span></a></li>
+                <li><a href="#resume" class="nav-link"><i class="fas fa-file-alt"></i><span>Resume</span></a></li>
+                <li><a href="#portfolio" class="nav-link"><i class="fas fa-briefcase"></i><span>Portofolio</span></a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i><span>Kontak</span></a></li>
+            </ul>
+        </nav>
 
         <main class="main-content">
-            <section class="about-section">
-                <h2><i class="fas fa-user-circle"></i> Tentang Saya</h2>
-                <p>
-                    Saya adalah seorang Fresh Graduate Teknik Informatika yang bersemangat dalam pengembangan web dan teknologi. Memiliki dasar yang kuat dalam HTML, CSS, dan JavaScript, serta pengalaman membangun aplikasi web interaktif. Saya mencari kesempatan untuk berkontribusi, belajar, dan tumbuh dalam lingkungan yang dinamis.
-                </p>
+            <section id="home" class="content-section active">
+                <div class="hero-text">
+                    <h1>Halo, Saya Budi Hartono</h1>
+                    <p>Saya seorang <span class="typing-effect">Web Developer</span></p>
+                    <a href="#portfolio" class="cta-button">Lihat Karya Saya</a>
+                </div>
             </section>
-            
-            <section class="experience-section">
-                <h2><i class="fas fa-briefcase"></i> Pengalaman Kerja</h2>
+
+            <section id="about" class="content-section">
+                <h2>Tentang Saya</h2>
+                <p>Saya seorang Fresh Graduate Teknik Informatika yang bersemangat dalam pengembangan web dan teknologi. Memiliki dasar yang kuat dalam HTML, CSS, dan JavaScript, serta pengalaman membangun aplikasi web interaktif. Saya mencari kesempatan untuk berkontribusi, belajar, dan tumbuh dalam lingkungan yang dinamis.</p>
+            </section>
+
+            <section id="resume" class="content-section">
+                <h2>Resume</h2>
                 <div class="timeline">
                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Web Developer Intern</h3>
-                            <p class="company">PT. Teknologi Maju | Jan 2025 - Apr 2025</p>
-                            <ul>
-                                <li>Membantu tim frontend dalam mengembangkan komponen UI menggunakan React.</li>
-                                <li>Berkolaborasi dengan desainer UI/UX untuk memastikan akurasi visual.</li>
-                                <li>Melakukan testing dan debugging untuk meningkatkan performa website.</li>
-                            </ul>
-                        </div>
+                        <h3>Web Developer Intern</h3>
+                        <span class="timeline-date">Jan 2025 - Apr 2025</span>
+                        <p>PT. Teknologi Maju</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Sarjana Teknik Informatika</h3>
+                        <span class="timeline-date">2021 - 2025</span>
+                        <p>Universitas Gadjah Mada</p>
                     </div>
                 </div>
             </section>
 
-            <section class="education-section">
-                <h2><i class="fas fa-graduation-cap"></i> Pendidikan</h2>
-                <div class="timeline">
-                     <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3>Sarjana Teknik Informatika</h3>
-                            <p class="institution">Universitas Gadjah Mada | 2021 - 2025</p>
-                            <p>IPK: 3.75 - Lulus dengan predikat Cum Laude.</p>
-                        </div>
+            <section id="portfolio" class="content-section">
+                <h2>Portofolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="https://i.ibb.co/Y0FrQHD/project1.jpg" alt="Project 1">
+                        <div class="overlay"><h3>Undangan Digital</h3></div>
                     </div>
-                </div>
-            </section>
-        </main>
-    </div>
-</body>
-</html>
+                    <div class="portfolio-item">
+                        <img src="https://i.ibb.co/Y0FrQHD/project1.jpg" alt="Project 2">
+                        <div class="overlay"><h3>Website UMKM</h3></div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="https://i.ibb.co/Y0FrQHD/project1.jpg" alt="Project
