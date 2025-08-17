@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="balloon-container">
+        <div class="balloon">
+            <div class="string"></div>
+            <span>Pecahkan!</span>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden">
+        <header>
+            <img src="https://nolae.eu/cdn/shop/articles/jennie-blackpink-profil-646657.jpg?v=1732634830&width=1920" alt="Foto Pembukaan" class="main-photo">
+            <h1>Selamat Ulang Tahun, [Nama Dia]!</h1>
+        </header>
+
+        <main>
+            <div class="text-box">
+                <h2>Untukmu yang Paling Spesial...</h2>
+                <p>
+                    Tulis pesan manismu di sini. Ceritakan betapa berartinya dia untukmu. 
+                    Kamu bisa menulis beberapa paragraf. Lorem ipsum dolor sit amet, 
+                    consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p>Dengan Penuh Cinta,</p>
+                <p>-[Namamu]-</p>
+            </div>
+
+            <div class="memories">
+                <h2>Kenangan Bersama</h2>
+                <div class="gallery">
+                    <img src="https://st1.uvnimg.com/1e/7e/1eda7eb77b91287f7dac94679c31/donde-ver-blackpink-the-movie-en-mexico.jpg" alt="Kenangan 1">
+                    <img src="https://cdn-images.dzcdn.net/images/artist/78239cba228e00eea1f378ba886b7d60/1900x1900-000000-80-0-0.jpg" alt="Kenangan 2">
+                    <img src="https://api.pifa.co.id/images/img_berita/54da93d97d9653a236591c965d515079.jpg" alt="Kenangan 3">
+                    <img src="https://www.billboard.com/wp-content/uploads/2025/08/blackpink-born-pink-2024-billboard-1800.jpg" alt="Kenangan 4">
+                    </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="lightbox" class="hidden">
+        <span class="close-button">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <div id="music-control" class="hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-volume-x hidden"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+    </div>
+
+    <audio id="background-music" src="aud/audio1.mp3" loop></audio>
+
+    <audio id="pop-sound" src="aud/pop.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
